@@ -17,27 +17,27 @@
     "@neondatabase/serverless": "^0.10.4",
     "@tabler/icons-react": "^3.24.0",
     "@types/bcryptjs": "^2.4.6",
-    "@vercel/analytics": "^1.4.1",
+    "@vercel/analytics": "^1.6.1",
     "@vercel/kv": "^3.0.0",
     "ai": "^4.0.13",
     "bcryptjs": "^2.4.3",
     "localforage": "^1.10.0",
-    "motion": "^11.15.0",
-    "next": "15.4.10",
-    "openai": "^4.76.0",
-    "overlayscrollbars": "^2.10.1",
+    "motion": "^11.18.2",
+    "next": "15.5.23",
+    "openai": "^4.104.0",
+    "overlayscrollbars": "^2.16.0",
     "overlayscrollbars-react": "^0.5.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "resend": "^4.8.0",
-    "sass": "^1.98.0",
-    "sass-loader": "^16.0.4",
-    "typesafe-i18n": "^5.26.2",
-    "zustand": "^5.0.2"
+    "sass": "^1.102.0",
+    "sass-loader": "^16.0.8",
+    "typesafe-i18n": "^5.27.1",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@chromatic-com/storybook": "^3.2.2",
+    "@chromatic-com/storybook": "^3.2.7",
     "@storybook/addon-essentials": "^8.6.18",
     "@storybook/addon-interactions": "^8.6.18",
     "@storybook/addon-onboarding": "^8.6.18",
@@ -45,11 +45,17 @@
     "@storybook/nextjs": "^8.6.18",
     "@storybook/react": "^8.6.18",
     "@storybook/test": "^8.6.18",
-    "@types/node": "^20",
+    "@types/node": "^20.19.43",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
-    "concurrently": "^9.1.1",
+    "concurrently": "^9.2.4",
     "storybook": "^8.6.18",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.26",
+      "zod-to-json-schema": "3.23.5"
+    }
   }
 }
