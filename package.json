@@ -45,7 +45,7 @@
     "@storybook/nextjs": "^8.6.18",
     "@storybook/react": "^8.6.18",
     "@storybook/test": "^8.6.18",
-    "@types/node": "^20.19.43",
+    "@types/node": "^26.2.0",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
     "concurrently": "^9.2.4",
