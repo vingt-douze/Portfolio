@@ -23,7 +23,7 @@
     "bcryptjs": "^2.4.3",
     "localforage": "^1.10.0",
     "motion": "^11.18.2",
-    "next": "15.5.23",
+    "next": "15.5.27",
     "openai": "^4.104.0",
     "overlayscrollbars": "^2.16.0",
     "overlayscrollbars-react": "^0.5.6",
