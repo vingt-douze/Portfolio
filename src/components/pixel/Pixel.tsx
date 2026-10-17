@@ -23,7 +23,7 @@ export default function Pixel() {
     (async () => {
       const visitsData = await fetch("/api/visit", { method: "GET" })
         .then((res) => res.json())
-        .then((data) => data.visits);
+        .then((data) => data.visits ?? {});
       const today = new Date();
       const startDate = new Date(Date.UTC(today.getFullYear(), 0, 1));
       const endDate = new Date(Date.UTC(today.getFullYear(), 11, 31));
