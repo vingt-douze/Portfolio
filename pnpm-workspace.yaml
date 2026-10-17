@@ -1,0 +1,7 @@
+overrides:
+  # Storybook still requests middleware 6, which has no patched release.
+  "@storybook/builder-webpack5>webpack-dev-middleware": ^7.4.6
+  # AI SDK 4 pins an affected jsondiffpatch release.
+  ai>jsondiffpatch: ^0.7.6
+  postcss: ^8.5.26
+  zod-to-json-schema: 3.23.5

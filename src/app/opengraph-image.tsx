@@ -1,7 +1,8 @@
 import { veryLongText } from "@/components/background/text";
 import { ImageResponse } from "next/og";
 
-import fs from "fs";
+// biome-ignore lint/correctness/noNodejsModules: The image is generated on the server from bundled fonts.
+import fs from "node:fs";
 const fontBoldBuffer = fs.readFileSync("./src/fonts/inter/Inter-Bold.ttf");
 const fontRegularBuffer = fs.readFileSync("./src/fonts/inter/Inter-Regular.ttf");
 const fontMonoBuffer = fs.readFileSync("./src/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf");

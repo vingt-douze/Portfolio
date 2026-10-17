@@ -7,17 +7,19 @@ const PADDING = 24 + 16 * 2;
 export default function Tooltip({
   children,
   content,
+  label,
   forceOpen,
   setForceOpen,
 }: {
   children: ReactNode;
   content: ReactNode;
+  label: string;
   forceOpen?: boolean;
   setForceOpen?: (open: boolean) => void;
 }) {
   const [open, setOpen] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
-  const tooltipContentRef = useRef<HTMLDivElement>(null);
+  const tooltipContentRef = useRef<HTMLButtonElement>(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -28,6 +30,7 @@ export default function Tooltip({
 
   function handleOpen() {
     setOpen(true);
+    setForceOpen?.(true);
   }
 
   useEffect(() => {
@@ -77,13 +80,12 @@ export default function Tooltip({
 
   return (
     <div className="tooltip">
-      {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-      {/* biome-ignore lint/a11y/noNoninteractiveTabindex: <explanation> */}
-      {/* biome-ignore lint/nursery/noStaticElementInteractions: <explanation> */}
-      <div
+      <button
+        type="button"
+        aria-label={label}
+        aria-expanded={open}
         className="tap-area"
         onClick={handleOpen}
-        tabIndex={0}
         ref={tooltipContentRef}
         style={{
           pointerEvents: forceOpen !== undefined ? "none" : "auto",

@@ -1,6 +1,5 @@
-import type { ForwardRefExoticComponent, RefAttributes } from "react";
 import "./button.scss";
-import { type Icon, IconExternalLink, type IconProps, IconSend } from "@tabler/icons-react";
+import { IconExternalLink, IconSend, type TablerIcon } from "@tabler/icons-react";
 
 export default function Button({
   text,
@@ -13,7 +12,7 @@ export default function Button({
 }: {
   text?: string;
   // biome-ignore lint/style/useNamingConvention: <explanation>
-  Icon?: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
+  Icon?: TablerIcon;
   type?: "primary" | "secondary" | "submit" | "text";
   url?: string;
   onClick?: () => void;

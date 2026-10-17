@@ -8,7 +8,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  decorators: [],
 } satisfies Meta<typeof ContactForm>;
 
 export default meta;

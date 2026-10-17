@@ -28,6 +28,7 @@ export default function BuildFooter() {
                 {LL.footer.build.with()}
               </a>{" "}
               <Tooltip
+                label={LL.footer.build.and()}
                 content={
                   <ProjectStacks
                     stacks={projectsList.portfolio.technologies.map(

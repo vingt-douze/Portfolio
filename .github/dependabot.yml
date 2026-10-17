@@ -5,7 +5,20 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # AI SDK 5 removes the Assistants API used by the chat.
+      - dependency-name: ai
+        update-types:
+          - version-update:semver-major
+      # Keep Node types aligned with the Node 22 deployment runtime.
+      - dependency-name: "@types/node"
+        update-types:
+          - version-update:semver-major
     groups:
+      security:
+        applies-to: security-updates
+        patterns:
+          - "*"
       minor-and-patch:
         update-types:
           - minor

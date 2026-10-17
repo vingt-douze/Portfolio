@@ -20,11 +20,10 @@ const preview: Preview = {
     },
 
     backgrounds: {
-      default: isDarkTheme ? "dark" : "light",
-      values: [
-        { name: "light", value: "#fff" },
-        { name: "dark", value: "#000" },
-      ],
+      options: {
+        light: { name: "light", value: "#fff" },
+        dark: { name: "dark", value: "#000" },
+      },
     },
 
     nextjs: {
@@ -33,6 +32,9 @@ const preview: Preview = {
         basePath: "/",
       },
     },
+  },
+  initialGlobals: {
+    backgrounds: { value: isDarkTheme ? "dark" : "light" },
   },
 
   decorators: [

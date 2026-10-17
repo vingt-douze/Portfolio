@@ -32,6 +32,7 @@ export default function Project({
           <h4>
             {LL.projects[id].name()}
             <Tooltip
+              label={LL.projects[id].name()}
               content={<ProjectStacks stacks={project.technologies.map((t) => stackItem[t])} />}
             >
               <span>

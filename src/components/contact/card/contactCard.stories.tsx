@@ -9,7 +9,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  decorators: [],
 } satisfies Meta<typeof ContactCard>;
 
 export default meta;

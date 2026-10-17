@@ -1,7 +1,6 @@
-import type { ForwardRefExoticComponent, RefAttributes } from "react";
 import "./card.scss";
 import Button from "@/components/button/Button";
-import type { Icon, IconProps } from "@tabler/icons-react";
+import type { TablerIcon } from "@tabler/icons-react";
 import ProsAndCons from "../pros-and-cons/ProsAndCons";
 
 export default function ContactCard({
@@ -19,7 +18,7 @@ export default function ContactCard({
   title: string;
   description: string;
   // biome-ignore lint/style/useNamingConvention: <explanation>
-  Icon?: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
+  Icon?: TablerIcon;
   isBest?: boolean;
   actionTitle: string;
   actionType: "primary" | "secondary";

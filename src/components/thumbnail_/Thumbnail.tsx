@@ -5,6 +5,7 @@ export default function Thumbnail() {
     <div id="thumbnail">
       <div id="background">
         <svg
+          aria-hidden="true"
           id="visual"
           viewBox="0 0 900 600"
           width="900"
@@ -15,24 +16,24 @@ export default function Thumbnail() {
         >
           <defs>
             <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
-              <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
                 result="shape"
-              ></feBlend>
-              <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur>
+              />
+              <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur" />
             </filter>
           </defs>
-          <rect width="900" height="600" fill="#000000"></rect>
+          <rect width="900" height="600" fill="#000000" />
           <g filter="url(#blur1)">
-            <circle cx="537" cy="441" fill="#575757" r="357"></circle>
-            <circle cx="663" cy="79" fill="#000000" r="357"></circle>
-            <circle cx="708" cy="570" fill="#575757" r="357"></circle>
-            <circle cx="255" cy="440" fill="#575757" r="357"></circle>
-            <circle cx="200" cy="237" fill="#000000" r="357"></circle>
-            <circle cx="75" cy="14" fill="#575757" r="357"></circle>
+            <circle cx="537" cy="441" fill="#575757" r="357" />
+            <circle cx="663" cy="79" fill="#000000" r="357" />
+            <circle cx="708" cy="570" fill="#575757" r="357" />
+            <circle cx="255" cy="440" fill="#575757" r="357" />
+            <circle cx="200" cy="237" fill="#000000" r="357" />
+            <circle cx="75" cy="14" fill="#575757" r="357" />
           </g>
         </svg>
       </div>

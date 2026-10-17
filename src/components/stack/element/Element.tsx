@@ -63,6 +63,7 @@ export default function Stack({
 
   return (
     <Tooltip
+      label={stack.name}
       content={<StackTooltip stack={stack} id={id} />}
       forceOpen={open}
       setForceOpen={setOpen}
