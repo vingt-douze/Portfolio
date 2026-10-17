@@ -14,6 +14,7 @@ export default function Title() {
         alt="Profile Picture"
         width={IMAGE_SIZE}
         height={IMAGE_SIZE}
+        loading="eager"
       />
       <div>
         <h1>Pierre LHOSTE</h1>

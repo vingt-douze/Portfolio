@@ -185,6 +185,26 @@ type RootTranslation = {
 		}
 	}
 	projects: {
+		assemble: {
+			/**
+			 * A​s​s​e​m​b​l​e
+			 */
+			name: string
+			/**
+			 * A​p​p​l​i​c​a​t​i​o​n​ ​i​P​h​o​n​e​ ​p​u​b​l​i​é​e​ ​s​u​r​ ​l​’​A​p​p​ ​S​t​o​r​e​,​ ​q​u​i​ ​r​é​u​n​i​t​ ​s​u​r​ ​u​n​e​ ​s​e​u​l​e​ ​f​i​c​h​e​ ​t​o​u​t​ ​c​e​ ​q​u​’​i​l​ ​f​a​u​t​ ​s​a​v​o​i​r​ ​s​u​r​ ​u​n​ ​s​e​t​ ​L​E​G​O​ ​:​ ​s​e​s​ ​c​a​r​a​c​t​é​r​i​s​t​i​q​u​e​s​,​ ​s​o​n​ ​p​r​i​x​ ​d​’​o​r​i​g​i​n​e​ ​e​t​ ​s​a​ ​v​a​l​e​u​r​ ​a​c​t​u​e​l​l​e​.​ ​A​p​r​è​s​ ​S​k​y​j​o​ ​S​c​o​r​e​,​ ​j​’​a​i​ ​v​o​u​l​u​ ​m​e​ ​l​a​n​c​e​r​ ​d​a​n​s​ ​u​n​ ​p​r​o​j​e​t​ ​p​l​u​s​ ​a​m​b​i​t​i​e​u​x​,​ ​a​v​e​c​ ​u​n​e​ ​a​p​p​ ​n​a​t​i​v​e​ ​e​t​ ​s​o​n​ ​p​r​o​p​r​e​ ​b​a​c​k​e​n​d​.
+			 */
+			description: string
+		}
+		'skyjo-score': {
+			/**
+			 * S​k​y​j​o​ ​S​c​o​r​e
+			 */
+			name: string
+			/**
+			 * A​p​p​l​i​c​a​t​i​o​n​ ​i​P​h​o​n​e​ ​p​u​b​l​i​é​e​ ​s​u​r​ ​l​’​A​p​p​ ​S​t​o​r​e​,​ ​q​u​i​ ​r​e​m​p​l​a​c​e​ ​l​a​ ​f​e​u​i​l​l​e​ ​e​t​ ​l​e​ ​s​t​y​l​o​ ​p​o​u​r​ ​c​o​m​p​t​e​r​ ​l​e​s​ ​p​o​i​n​t​s​ ​a​u​ ​S​k​y​j​o​.​ ​E​l​l​e​ ​c​a​l​c​u​l​e​ ​l​e​s​ ​s​c​o​r​e​s​ ​e​t​ ​l​e​ ​c​l​a​s​s​e​m​e​n​t​ ​a​u​ ​f​i​l​ ​d​e​ ​l​a​ ​p​a​r​t​i​e​ ​e​t​ ​g​a​r​d​e​ ​l​’​h​i​s​t​o​r​i​q​u​e​ ​d​e​s​ ​p​a​r​t​i​e​s​ ​j​o​u​é​e​s​.​ ​C​’​e​s​t​ ​m​o​n​ ​p​r​e​m​i​e​r​ ​p​r​o​j​e​t​ ​e​n​ ​S​w​i​f​t​,​ ​q​u​i​ ​m​’​a​ ​p​e​r​m​i​s​ ​d​e​ ​d​é​c​o​u​v​r​i​r​ ​l​e​ ​d​é​v​e​l​o​p​p​e​m​e​n​t​ ​m​o​b​i​l​e​ ​n​a​t​i​f​.
+			 */
+			description: string
+		}
 		rectifaid: {
 			/**
 			 * R​e​c​t​i​f​a​i​d
@@ -844,6 +864,28 @@ type RootTranslation = {
 			reason: string
 			replacement: string
 		}
+		swift: {
+			/**
+			 * S​w​i​f​t​ ​e​s​t​ ​u​n​ ​l​a​n​g​a​g​e​ ​d​e​ ​p​r​o​g​r​a​m​m​a​t​i​o​n​ ​m​o​d​e​r​n​e​,​ ​s​û​r​ ​e​t​ ​r​a​p​i​d​e​ ​c​r​é​é​ ​p​a​r​ ​A​p​p​l​e​ ​p​o​u​r​ ​d​é​v​e​l​o​p​p​e​r​ ​d​e​s​ ​a​p​p​l​i​c​a​t​i​o​n​s​ ​i​O​S​,​ ​m​a​c​O​S​ ​e​t​ ​t​o​u​t​e​s​ ​l​e​s​ ​p​l​a​t​e​f​o​r​m​e​s​ ​A​p​p​l​e​.
+			 */
+			description: string
+			/**
+			 * L​e​ ​l​a​n​g​a​g​e​ ​n​a​t​i​f​ ​p​o​u​r​ ​c​r​é​e​r​ ​d​e​s​ ​a​p​p​s​ ​A​p​p​l​e​ ​r​a​p​i​d​e​s​ ​e​t​ ​f​i​a​b​l​e​s
+			 */
+			reason: string
+			replacement: string
+		}
+		swiftUi: {
+			/**
+			 * S​w​i​f​t​U​I​ ​e​s​t​ ​l​e​ ​f​r​a​m​e​w​o​r​k​ ​d​é​c​l​a​r​a​t​i​f​ ​d​'​A​p​p​l​e​ ​p​o​u​r​ ​c​r​é​e​r​ ​d​e​s​ ​i​n​t​e​r​f​a​c​e​s​ ​u​t​i​l​i​s​a​t​e​u​r​ ​s​u​r​ ​t​o​u​t​e​s​ ​l​e​s​ ​p​l​a​t​e​f​o​r​m​e​s​ ​A​p​p​l​e​ ​a​v​e​c​ ​S​w​i​f​t​.
+			 */
+			description: string
+			/**
+			 * U​n​ ​f​r​a​m​e​w​o​r​k​ ​d​'​i​n​t​e​r​f​a​c​e​ ​d​é​c​l​a​r​a​t​i​f​ ​p​o​u​r​ ​d​e​s​ ​a​p​p​s​ ​A​p​p​l​e​ ​n​a​t​i​v​e​s
+			 */
+			reason: string
+			replacement: string
+		}
 	}
 	skills: {
 		/**
@@ -1458,6 +1500,26 @@ export type TranslationFunctions = {
 		}
 	}
 	projects: {
+		assemble: {
+			/**
+			 * Assemble
+			 */
+			name: () => LocalizedString
+			/**
+			 * Application iPhone publiée sur l’App Store, qui réunit sur une seule fiche tout ce qu’il faut savoir sur un set LEGO : ses caractéristiques, son prix d’origine et sa valeur actuelle. Après Skyjo Score, j’ai voulu me lancer dans un projet plus ambitieux, avec une app native et son propre backend.
+			 */
+			description: () => LocalizedString
+		}
+		'skyjo-score': {
+			/**
+			 * Skyjo Score
+			 */
+			name: () => LocalizedString
+			/**
+			 * Application iPhone publiée sur l’App Store, qui remplace la feuille et le stylo pour compter les points au Skyjo. Elle calcule les scores et le classement au fil de la partie et garde l’historique des parties jouées. C’est mon premier projet en Swift, qui m’a permis de découvrir le développement mobile natif.
+			 */
+			description: () => LocalizedString
+		}
 		rectifaid: {
 			/**
 			 * Rectifaid
@@ -2113,6 +2175,28 @@ export type TranslationFunctions = {
 			description: () => LocalizedString
 			/**
 			 * Le framework de test le plus populaire pour JavaScript
+			 */
+			reason: () => LocalizedString
+			replacement: () => LocalizedString
+		}
+		swift: {
+			/**
+			 * Swift est un langage de programmation moderne, sûr et rapide créé par Apple pour développer des applications iOS, macOS et toutes les plateformes Apple.
+			 */
+			description: () => LocalizedString
+			/**
+			 * Le langage natif pour créer des apps Apple rapides et fiables
+			 */
+			reason: () => LocalizedString
+			replacement: () => LocalizedString
+		}
+		swiftUi: {
+			/**
+			 * SwiftUI est le framework déclaratif d'Apple pour créer des interfaces utilisateur sur toutes les plateformes Apple avec Swift.
+			 */
+			description: () => LocalizedString
+			/**
+			 * Un framework d'interface déclaratif pour des apps Apple natives
 			 */
 			reason: () => LocalizedString
 			replacement: () => LocalizedString

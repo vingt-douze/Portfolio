@@ -13,9 +13,11 @@ export type ProjectType = {
     fr: string;
   };
   technologies: StackIdType[];
+  startDate: string;
   endDate: string;
   images: string[];
   thumbnail: string;
+  icon?: string;
   url: string;
   repo: string;
   tags: string[];

@@ -25,12 +25,15 @@
 }
 
 @page {
+  size: A4;
   margin: 0;
 }
 
 @media print {
   body {
     background-color: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   #root {

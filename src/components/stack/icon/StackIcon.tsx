@@ -7,10 +7,12 @@ export default function StackIcon({
   stack,
   size = 48,
   forcedTheme,
+  loading,
 }: {
   stack: StackType;
   size?: number;
   forcedTheme?: "light" | "dark";
+  loading?: "eager" | "lazy";
 }) {
   const {
     name,
@@ -36,6 +38,7 @@ export default function StackIcon({
         alt={`${name} icon`}
         width={size}
         height={size}
+        loading={loading}
         style={{ filter, height: size, width: size }}
       />
     </div>

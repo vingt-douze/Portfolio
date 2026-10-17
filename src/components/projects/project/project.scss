@@ -33,6 +33,13 @@
       font-weight: normal;
       font-size: 20px;
 
+      > img {
+        align-self: center;
+        margin-right: 12px;
+        border-radius: 22.37%;
+        box-shadow: 0 0 0 1px var(--invert-10);
+      }
+
       .tooltip {
         margin-left: auto;
 
@@ -75,7 +82,17 @@
 
       .actions {
         display: flex;
+        align-items: center;
         gap: 8px;
+
+        time {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          gap: 4px;
+          color: var(--text-color-secondary);
+          font-variant-numeric: tabular-nums;
+        }
       }
     }
   }

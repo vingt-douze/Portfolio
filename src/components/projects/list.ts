@@ -3,6 +3,59 @@ import type { StackType } from "../stack/stack";
 import type { ProjectType } from "./project";
 
 export const projectsList = {
+  assemble: {
+    name: { en: "Assemble", fr: "Assemble" },
+    description: {
+      fr: "Application iPhone publiée sur l’App Store, qui réunit sur une seule fiche tout ce qu’il faut savoir sur un set LEGO : ses caractéristiques, son prix d’origine et sa valeur actuelle. Après Skyjo Score, j’ai voulu me lancer dans un projet plus ambitieux, avec une app native et son propre backend.",
+      en: "An iPhone app, available on the App Store, that gathers everything you need to know about a LEGO set on a single page: its details, its original price and its current value. After Skyjo Score, I wanted to take on a more ambitious project, with a native app and its own backend.",
+    },
+    technologies: [
+      "swift",
+      "swiftUi",
+      "nextJs",
+      "react",
+      "typescript",
+      "prisma",
+      "postgresql",
+      "betterAuth",
+      "zod",
+      "zustand",
+      "antDesign",
+      "tablerIcons",
+      "recharts",
+      "overlayscrollbars",
+      "typesafeI18n",
+      "biome",
+      "git",
+      "github",
+    ],
+    thumbnail: "/project-thumbnail/assemble/thumbnail.jpg",
+    icon: "/project-thumbnail/assemble/icon.png",
+    images: ["/project-thumbnail/assemble/details.jpg"],
+    url: "https://apps.apple.com/app/assemble-brick-price-guide/id6789924902",
+    tags: ["mobile-app", "fullstack"],
+    startDate: "2026-07-03",
+    endDate: "2026-08-13",
+    repo: "",
+  },
+
+  "skyjo-score": {
+    name: { en: "Skyjo Score", fr: "Skyjo Score" },
+    description: {
+      fr: "Application iPhone publiée sur l’App Store, qui remplace la feuille et le stylo pour compter les points au Skyjo. Elle calcule les scores et le classement au fil de la partie et garde l’historique des parties jouées. C’est mon premier projet en Swift, qui m’a permis de découvrir le développement mobile natif.",
+      en: "An iPhone app, available on the App Store, that replaces pen and paper for keeping score in Skyjo. It works out the scores and rankings as the game goes on and keeps a history of past games. It is my first Swift project, which let me discover native mobile development.",
+    },
+    technologies: ["swift", "swiftUi", "git"],
+    thumbnail: "/project-thumbnail/skyjo/thumbnail.jpg",
+    icon: "/project-thumbnail/skyjo/icon.png",
+    images: [],
+    url: "https://apps.apple.com/app/skyjo-score-stats/id6783484073",
+    tags: ["mobile-app", "freemium"],
+    startDate: "2026-06-14",
+    endDate: "2026-07-02",
+    repo: "",
+  },
+
   rectifaid: {
     name: { en: "Rectifaid", fr: "Rectifaid" },
     description: {
@@ -30,10 +83,12 @@ export const projectsList = {
     ],
     thumbnail:
       "https://qg007gk6n2popinf.public.blob.vercel-storage.com/project-thumbnail/rectifaid/thumbnail.png",
+    icon: "/project-thumbnail/rectifaid/icon.png",
     images: [],
     url: "https://rectifaid.vercel.app/",
     tags: ["web-app", "saas", "fullstack"],
-    endDate: "",
+    startDate: "2025-03-19",
+    endDate: "2025-12-26",
     repo: "",
   },
 
@@ -52,10 +107,12 @@ export const projectsList = {
     ],
     thumbnail:
       "https://qg007gk6n2popinf.public.blob.vercel-storage.com/project-thumbnail/portfolio/main.png",
+    icon: "/project-thumbnail/portfolio/icon.png",
     url: "https://pierre-lhoste.vercel.app/",
     repo: "https://github.com/Pierre-LHOSTE/Portfolio",
     tags: ["portfolio", "fullstack"],
-    endDate: "2025",
+    startDate: "2024-12-08",
+    endDate: "",
   },
 
   "212-colors": {
@@ -101,8 +158,10 @@ export const projectsList = {
     ],
     thumbnail:
       "https://qg007gk6n2popinf.public.blob.vercel-storage.com/project-thumbnail/212-colors/thumbnail.png",
+    icon: "/project-thumbnail/212-colors/icon.png",
     url: "https://212-colors.vercel.app/",
     repo: "https://github.com/Pierre-LHOSTE/212-colors",
+    startDate: "2024-04-22",
     endDate: "2024-10-31",
     tags: ["web-app", "for-school", "fullstack"],
   },
@@ -128,8 +187,10 @@ export const projectsList = {
     images: [],
     thumbnail:
       "https://qg007gk6n2popinf.public.blob.vercel-storage.com/project-thumbnail/212-collections/thumbnail.png",
+    icon: "/project-thumbnail/212-collections/icon.png",
     url: "https://github.com/212-Collections/212-Collections",
     repo: "https://github.com/212-Collections/212-Collections",
+    startDate: "2023-07-05",
     endDate: "2023-10-13",
     tags: ["for-training", "web-app", "fullstack"],
   },
@@ -156,9 +217,11 @@ export const projectsList = {
     ],
     thumbnail:
       "https://qg007gk6n2popinf.public.blob.vercel-storage.com/project-thumbnail/first-portfolio/thumbnail.png",
+    icon: "/project-thumbnail/first-portfolio/icon.png",
     url: "https://pierre-lhoste.github.io/",
     repo: "https://github.com/Pierre-LHOSTE/Pierre-LHOSTE.github.io",
     tags: ["portfolio", " static"],
+    startDate: "2022-10-11",
     endDate: "2022-12-17",
   },
 } as const satisfies Record<string, ProjectType>;

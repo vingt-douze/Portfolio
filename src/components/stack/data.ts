@@ -1049,6 +1049,48 @@ export const stackItem = {
       invert: "black",
     },
   },
+
+  swift: {
+    name: "Swift",
+    description: {
+      en: "Swift is a modern, safe and fast programming language created by Apple to build apps for iOS, macOS and all Apple platforms.",
+      fr: "Swift est un langage de programmation moderne, sûr et rapide créé par Apple pour développer des applications iOS, macOS et toutes les plateformes Apple.",
+    },
+    reason: {
+      en: "The native language to build fast and reliable Apple apps",
+      fr: "Le langage natif pour créer des apps Apple rapides et fiables",
+    },
+    category: "language",
+    homepage: "https://www.swift.org/",
+    tags: ["learning"],
+
+    styles: {
+      icon: "/stack-icon/swift.svg",
+      color: "#f05138",
+      background: "#1f1f1f",
+    },
+  },
+
+  swiftUi: {
+    name: "SwiftUI",
+    description: {
+      en: "SwiftUI is Apple's declarative framework for building user interfaces across all Apple platforms with Swift.",
+      fr: "SwiftUI est le framework déclaratif d'Apple pour créer des interfaces utilisateur sur toutes les plateformes Apple avec Swift.",
+    },
+    reason: {
+      en: "A declarative UI framework for native Apple apps",
+      fr: "Un framework d'interface déclaratif pour des apps Apple natives",
+    },
+    category: "frontend",
+    homepage: "https://developer.apple.com/swiftui/",
+    tags: ["learning"],
+
+    styles: {
+      icon: "/stack-icon/swiftui.svg",
+      color: "#0a84ff",
+      background: "#1f1f1f",
+    },
+  },
 } as const satisfies Record<string, StackType>;
 
 function getStackByCategory(group: string) {

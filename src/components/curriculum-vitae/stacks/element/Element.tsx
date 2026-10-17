@@ -17,7 +17,7 @@ export default function Stack({
 
   return (
     <div className="cv-stack">
-      <StackIcon stack={stack} size={ICON_SIZE} forcedTheme="light" />
+      <StackIcon stack={stack} size={ICON_SIZE} forcedTheme="light" loading="eager" />
       <div className="content">
         <h4>
           <span className="name">{stack.name}</span>
